@@ -8,17 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		61016A6327ABCBF200846BA0 /* OmdbAPI_With_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61016A6227ABCBF200846BA0 /* OmdbAPI_With_SwiftUIApp.swift */; };
-		61016A6527ABCBF200846BA0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61016A6427ABCBF200846BA0 /* ContentView.swift */; };
 		61016A6727ABCBF400846BA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61016A6627ABCBF400846BA0 /* Assets.xcassets */; };
 		61016A6A27ABCBF400846BA0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61016A6927ABCBF400846BA0 /* Preview Assets.xcassets */; };
+		61016A7227ABCC6900846BA0 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61016A7127ABCC6900846BA0 /* APIConstants.swift */; };
+		61016A7927ABDC7900846BA0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61016A7827ABDC7900846BA0 /* MainView.swift */; };
+		6177686B27ABF05E00B1D8C9 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6177686A27ABF05E00B1D8C9 /* MainViewModel.swift */; };
+		6177687A27AC12CD00B1D8C9 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6177687927AC12CD00B1D8C9 /* MovieModel.swift */; };
+		6177687C27AC12D300B1D8C9 /* RatingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6177687B27AC12D300B1D8C9 /* RatingModel.swift */; };
+		6177687E27AC133700B1D8C9 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6177687D27AC133700B1D8C9 /* MovieService.swift */; };
+		6177688227AC146200B1D8C9 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6177688127AC146200B1D8C9 /* SearchResponse.swift */; };
+		6177688427AD0F2900B1D8C9 /* ExpandableMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6177688327AD0F2900B1D8C9 /* ExpandableMovieView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		61016A5F27ABCBF200846BA0 /* OmdbAPI With SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OmdbAPI With SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61016A6227ABCBF200846BA0 /* OmdbAPI_With_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmdbAPI_With_SwiftUIApp.swift; sourceTree = "<group>"; };
-		61016A6427ABCBF200846BA0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		61016A6627ABCBF400846BA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61016A6927ABCBF400846BA0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		61016A7127ABCC6900846BA0 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		61016A7827ABDC7900846BA0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		6177686A27ABF05E00B1D8C9 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		6177687027ABF7EB00B1D8C9 /* OmdbAPI-With-SwiftUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "OmdbAPI-With-SwiftUI-Info.plist"; sourceTree = SOURCE_ROOT; };
+		6177687927AC12CD00B1D8C9 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		6177687B27AC12D300B1D8C9 /* RatingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingModel.swift; sourceTree = "<group>"; };
+		6177687D27AC133700B1D8C9 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		6177688127AC146200B1D8C9 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		6177688327AD0F2900B1D8C9 /* ExpandableMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableMovieView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +66,15 @@
 		61016A6127ABCBF200846BA0 /* OmdbAPI With SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				61016A6227ABCBF200846BA0 /* OmdbAPI_With_SwiftUIApp.swift */,
-				61016A6427ABCBF200846BA0 /* ContentView.swift */,
-				61016A6627ABCBF400846BA0 /* Assets.xcassets */,
 				61016A6827ABCBF400846BA0 /* Preview Content */,
+				61016A6627ABCBF400846BA0 /* Assets.xcassets */,
+				61016A6227ABCBF200846BA0 /* OmdbAPI_With_SwiftUIApp.swift */,
+				6177687027ABF7EB00B1D8C9 /* OmdbAPI-With-SwiftUI-Info.plist */,
+				61016A7027ABCC5E00846BA0 /* Constants */,
+				6177688027AC145400B1D8C9 /* Network Models */,
+				6177686227ABE66800B1D8C9 /* Service */,
+				61016A7427ABDC4800846BA0 /* ViewModels */,
+				61016A7327ABD59C00846BA0 /* Views */,
 			);
 			path = "OmdbAPI With SwiftUI";
 			sourceTree = "<group>";
@@ -65,6 +85,65 @@
 				61016A6927ABCBF400846BA0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		61016A7027ABCC5E00846BA0 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				61016A7127ABCC6900846BA0 /* APIConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		61016A7327ABD59C00846BA0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				61016A7827ABDC7900846BA0 /* MainView.swift */,
+				6177688327AD0F2900B1D8C9 /* ExpandableMovieView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		61016A7427ABDC4800846BA0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6177686A27ABF05E00B1D8C9 /* MainViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6177686227ABE66800B1D8C9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6177687D27AC133700B1D8C9 /* MovieService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		6177686527ABEA4500B1D8C9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6177687927AC12CD00B1D8C9 /* MovieModel.swift */,
+				6177687B27AC12D300B1D8C9 /* RatingModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6177687F27AC144F00B1D8C9 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				6177688127AC146200B1D8C9 /* SearchResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		6177688027AC145400B1D8C9 /* Network Models */ = {
+			isa = PBXGroup;
+			children = (
+				6177686527ABEA4500B1D8C9 /* Models */,
+				6177687F27AC144F00B1D8C9 /* Responses */,
+			);
+			path = "Network Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +216,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61016A6527ABCBF200846BA0 /* ContentView.swift in Sources */,
+				6177687A27AC12CD00B1D8C9 /* MovieModel.swift in Sources */,
+				6177688427AD0F2900B1D8C9 /* ExpandableMovieView.swift in Sources */,
+				6177687C27AC12D300B1D8C9 /* RatingModel.swift in Sources */,
+				6177686B27ABF05E00B1D8C9 /* MainViewModel.swift in Sources */,
+				61016A7927ABDC7900846BA0 /* MainView.swift in Sources */,
+				6177688227AC146200B1D8C9 /* SearchResponse.swift in Sources */,
+				6177687E27AC133700B1D8C9 /* MovieService.swift in Sources */,
 				61016A6327ABCBF200846BA0 /* OmdbAPI_With_SwiftUIApp.swift in Sources */,
+				61016A7227ABCC6900846BA0 /* APIConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -251,7 +337,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -272,11 +358,13 @@
 				DEVELOPMENT_TEAM = FMVQWC8BK3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "OmdbAPI-With-SwiftUI-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,11 +389,13 @@
 				DEVELOPMENT_TEAM = FMVQWC8BK3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "OmdbAPI-With-SwiftUI-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
